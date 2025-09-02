@@ -1,0 +1,64 @@
+.ProjectCard {
+	text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 90%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: 1rem;
+}
+
+.ProjectCard a{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(49, 44, 44);
+    padding: 0.5rem;
+    border-radius: 1rem;
+    width: 6rem;
+}
+
+.ProjectCard a:hover{
+    color: rgb(49, 44, 44);
+    border: 1px solid rgb(49, 44, 44) ;
+    background-color: white;
+}
+
+
+.projects_details{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    width: 100%;
+}
+
+.project_video{
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+            filter: brightness(100%);
+            border-radius: 10px;
+}
+@media (max-width: 768px) {
+    .ProjectCard {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .ProjectCard a{
+        
+    }
+
+    .project_video{
+        width: 100%;
+    }
+
+    .projects_details{
+        order: 2;
+        width: 90%;
+    }
+}

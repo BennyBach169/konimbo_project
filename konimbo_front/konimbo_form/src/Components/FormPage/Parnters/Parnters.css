@@ -1,0 +1,28 @@
+.Parnters {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 80%;
+  padding: 10px 0;
+}
+
+
+.slider-track {
+  display: flex;
+  gap: 40px; /* spacing between logos */
+  animation: scroll 20s linear infinite;
+}
+
+.parnter_img {
+  height: 60px;
+  width: auto;
+  flex-shrink: 0;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

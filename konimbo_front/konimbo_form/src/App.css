@@ -1,0 +1,39 @@
+.App{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.whatsapp{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  background-color:#4dc247;
+  color: white;
+  font-size: 1rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+  gap: 0.2rem;
+  border: none;
+
+}
+
+.whatsapp_icon{
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .whatsapp{
+    bottom: 30px;
+    right: 10px;
+    font-size: 0.8rem;
+  }
+  .whatsapp_icon{
+    font-size: 1.2rem;
+  }
+}

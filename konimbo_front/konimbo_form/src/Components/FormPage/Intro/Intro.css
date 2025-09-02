@@ -1,0 +1,55 @@
+.Intro {
+	display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+    height: 29rem;
+}
+
+.Intro h1{
+    font-size: 2.5rem;
+    color: #ffffff;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+    position: absolute;
+    top:20%
+}
+
+.into_bttons{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    top: 63%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.intro_btn{
+    width: 9rem;
+    padding: 0.3rem;
+    border-radius: 1rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(45, 41, 41);
+}
+
+.intro_btn:hover{
+    color: #4dc247;
+}
+
+
+@media (max-width: 768px) {
+   .into_bttons{
+    display: none;
+   }
+   .Intro h1{
+    font-size: 2.2rem;
+   }
+}

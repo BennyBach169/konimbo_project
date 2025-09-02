@@ -1,0 +1,10 @@
+.TablePage {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    padding-top: 5rem;
+    margin-top: 6rem;
+}
