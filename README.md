@@ -16,7 +16,7 @@ The application fetches data from Airtable via API and displays it in a responsi
   - State management with `useState` and `useEffect`  
   - Axios for API calls  
   - CSS for styling  
-  - MUI icons  
+  - React icons  
   - Toastify for notifications  
   - Fully responsive  
 
