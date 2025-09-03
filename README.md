@@ -22,7 +22,7 @@ The application fetches data from Airtable via API and displays it in a responsi
 
 - **Media Files**
   - 3 `.mp4` files are **excluded from the repository** due to size  
-  - Will be delivered via **Google Drive**  
+  - Will be delivered via **Google Drive**  https://drive.google.com/drive/folders/1FyVwVcXqrxWcx3xMMwR8dHdmUsliHn-L?usp=sharing
 
 - **Docker**
   - Full-stack application image available:  
@@ -47,6 +47,7 @@ npm start
 # Open your browser at http://localhost:5173
 
 # ⚠️ Note: The .mp4 video files are missing from the repository and should be added to the assets folder from Google Drive.
+https://drive.google.com/drive/folders/1FyVwVcXqrxWcx3xMMwR8dHdmUsliHn-L?usp=sharing
 
 # 3. Backend Setup
 cd ../../konimbo_back/Konimbo-Task
