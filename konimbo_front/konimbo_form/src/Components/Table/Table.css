@@ -26,3 +26,13 @@
     border-right: 1px solid #ccc;
     font-weight: bold;
 }
+
+@media (max-width: 768px) {
+    .const_params{
+       font-size: 0.6rem;
+       
+    }
+    .param{
+       
+    }
+}

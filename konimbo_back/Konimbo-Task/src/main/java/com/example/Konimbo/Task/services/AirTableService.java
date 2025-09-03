@@ -59,7 +59,8 @@ public class AirTableService {
         return response.getBody();
     }
 
-    public void addRecord(Record record){
+    public void addRecord(Record record) throws Exception {
+        validateRecord(record);
         HttpHeaders headers = new HttpHeaders();
         headers.set("Authorization", "Bearer " + apiKey);
         headers.set("Content-Type", "application/json");
@@ -103,6 +104,16 @@ public class AirTableService {
                 entity,
                 String.class
         );
+    }
+
+    private void validateRecord(Record record) throws Exception {
+        if(record.getFields().getName()==null || record.getFields().getName().isEmpty()){
+            throw new Exception("Name cannot be empty please try again");
+        }
+        if(record.getFields().getEmail()==null || record.getFields().getEmail().isEmpty()){
+            throw new Exception("Email cannot be empty please try again");
+        }
+
     }
 
 

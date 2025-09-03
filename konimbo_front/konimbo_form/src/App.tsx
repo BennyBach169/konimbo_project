@@ -5,6 +5,7 @@ import { Menu } from './Components/Menu/Menu'
 import { Routing } from './Components/Routing/Routing'
 import { FaWhatsapp } from "react-icons/fa";
 import AOS from "aos"; 
+import { ToastNotifications } from './Components/ToastNotifications';
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
 
   return (
     <div className='App'>
+      <ToastNotifications/>
       <Menu/>
       <Routing/>
       <Footer/>

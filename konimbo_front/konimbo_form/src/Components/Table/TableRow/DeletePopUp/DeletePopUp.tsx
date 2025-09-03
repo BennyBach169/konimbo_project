@@ -2,6 +2,7 @@ import type { JSX } from "react";
 import "./DeletePopUp.css";
 import type { Record } from "../../../../models/Record";
 import airTableService from "../../../../services/AirTableService";
+import { showErrorToast, showSuccessToast } from "../../../ToastNotifications";
 
 interface DeletePopUpProps {
     handleBack: () => void;
@@ -12,12 +13,13 @@ interface DeletePopUpProps {
 export function DeletePopUp(props: DeletePopUpProps): JSX.Element {
     function handleDelete() {
       airTableService.deleteRecord(props.record.id!)
-      .then((res)=>{
+      .then(()=>{
+        showSuccessToast("Record deleted successfully");
         props.updateData();
         props.handleBack()
       })
       .catch((err)=>{
-        console.log(err);
+        showErrorToast(err.response?.data);
       })
     }
     return (

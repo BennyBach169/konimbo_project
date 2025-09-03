@@ -4,6 +4,7 @@ import { Fields } from "../../models/Fields";
 import { Record } from "../../models/Record";
 import airTableService from "../../services/AirTableService";
 import "./Form.css";
+import { showErrorToast, showSuccessToast } from "../ToastNotifications";
 
 export function Form(): JSX.Element {
   const [name, setName] = useState<string>("");
@@ -19,13 +20,14 @@ export function Form(): JSX.Element {
     airTableService
       .addRecord(record)
       .then(() => {
+        showSuccessToast("Record added successfully");
         setName("");
         setEmail("");
         setPhoneNumber("");
         setMessage("");
       })
       .catch((err) => {
-        console.log(err.message.data);
+        showErrorToast(err.response?.data);
       });
   }
 
@@ -51,7 +53,7 @@ export function Form(): JSX.Element {
           placeholder="Name"
           onChange={(e) => setName(e.target.value)}
           value={name}
-          required
+          
         />
         <input
           type="email"

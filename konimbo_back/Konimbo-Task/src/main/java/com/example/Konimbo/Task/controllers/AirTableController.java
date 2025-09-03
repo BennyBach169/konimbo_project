@@ -25,7 +25,7 @@ public class AirTableController {
     }
 
     @PostMapping()
-    public void addRecord(@RequestBody Record record){
+    public void addRecord(@RequestBody Record record) throws Exception {
         airTableService.addRecord(record);
     }
 
